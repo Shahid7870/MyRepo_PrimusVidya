@@ -1,0 +1,98 @@
+// #NavbarOffcanvas{
+//     .offcanvas-header{
+//         background-color: $primary-color;
+//         .btn-close {
+//             filter: invert(1);
+//         }
+//     }
+// }
+
+.offcanvas {
+  width: 280px;
+
+  .offcanvas-header {
+    background-color: $primary-color;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    .btn-close {
+      filter: invert(1);
+    }
+
+    img {
+      height: 50px;
+    }
+  }
+
+  .offcanvas-body {
+    padding: 1rem;
+  }
+}
+
+.accordion {
+  .accordion-item {
+    border: none;
+    margin-bottom: 0.5rem;
+
+    .accordion-header {
+      .accordion-button {
+        background-color: #f8f9fa;
+        color: #333;
+        font-weight: bold;
+        box-shadow: none;
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &::after {
+          transition: transform 0.3s ease-in-out;
+        }
+
+        &[aria-expanded="true"]::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.nav-link {
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  display: block;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+ul {
+  padding-left: 1rem;
+  list-style: none;
+
+  li {
+    margin: 0.5rem 0;
+
+    a {
+      text-decoration: none;
+      color: #555;
+      font-size: 0.95rem;
+      font-weight: 500;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+#TalkBtn{
+    margin-top: 20px;
+    background-color: $line-color;
+    color: white;
+    &:hover{
+        background-color: $primary-color;
+    }
+}
+
+

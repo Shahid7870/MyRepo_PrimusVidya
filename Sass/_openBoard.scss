@@ -1,0 +1,28 @@
+main {
+  #OpenBoard {
+    padding: 50px 0px;
+    .section-title {
+      @extend %section-title;
+    }
+    h2{
+        span{
+            color: $primary-color;
+        }
+    }
+    button{
+        background-color: $line-color;
+        color: white;
+        transition: all 0.3s ease-in-out;
+        i{
+            visibility: hidden;
+        }
+        &:hover{
+            background-color: $secondary-color;
+            transform: translateY(-5px); 
+            i{
+                visibility:visible;
+            }
+        }
+    }
+  }
+}

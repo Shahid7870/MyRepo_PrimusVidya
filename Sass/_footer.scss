@@ -1,0 +1,15 @@
+footer{
+    background-color: #212E47;
+    color: white;
+    .list-unstyled{
+        li{
+            margin-bottom: 10px;
+            i{
+                color: $primary-color;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

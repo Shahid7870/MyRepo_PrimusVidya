@@ -1,0 +1,105 @@
+
+
+
+.navbar {
+    background-color: $primary-color;
+    .navbar-brand {
+        margin-right: 12px;
+        img {
+            width: 140px;
+            height: auto;
+        }
+    }
+    .navbar-toggler {
+        .navbar-toggler-icon {
+            filter: brightness(0) invert(1);
+        }
+    }
+    .nav-item {
+        margin-right: 10px;
+        .nav-link {
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            &:hover {
+                color: #212E47;
+            }
+        }
+        .dropdown-menu {
+            border: none;
+            box-shadow: rgba(4, 4, 5, 0.2) 0px 7px 36px -8px;
+            opacity: 1;
+            top: 30px;
+            z-index: 9999;
+            min-width: 250px;
+            .dropdown-item {
+                color: $primary-color;
+                padding: 4px 8px;
+                font-size: 14px;
+                font-weight: 500;
+                border-bottom: 1px solid #212E47;
+                width: 50px;
+                margin-left: 20px;
+                transition: color 0.3s ease, border-bottom 0.3s ease;
+                &:hover {
+                    color: red;
+                    border-bottom: 1px solid $primary-color;
+                    background-color: transparent;
+                    i {
+                        color: #212E47;
+                    }
+                }
+            }
+            ul {
+                padding-left: 10px;
+                .nav-item {
+                    list-style-type: none;
+                    margin-bottom: 5px;
+                    .dropdown-subLink {
+                        color: rgb(85, 84, 84);
+                        text-decoration: none;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        #dropdownFirst {
+            width: 750px;
+        }
+    }
+    .nav-button {
+        margin-left: 10px;
+        a {
+            background-color: #212E47;
+            color: white;
+            font-weight: bold;
+            padding: 5px 15px;
+            &:hover {
+                color: #fff;
+                background-color: $secondary-color;
+            }
+        }
+    }
+    .nav-item.dropdown {
+        position: relative;
+        .dropdown-menu {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        &:hover {
+            .dropdown-menu {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    
+}
+

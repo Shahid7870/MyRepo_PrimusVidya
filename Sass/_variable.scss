@@ -1,0 +1,30 @@
+
+$primary-color: #D85B4F;
+$secondary-color: #b14955;
+$line-color: #1a1e2d;
+
+
+// Mixin for section title styling
+@mixin section-title($line-width: 20px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  
+    h2 {
+      font-size: 16px;
+      font-weight: bold;
+      color: $primary-color; 
+    }
+  
+    .line {
+      width: $line-width;
+      height: 2px;
+      background-color: $line-color;
+      margin-bottom: 5px;
+    }
+  }
+  
+  %section-title {
+    @include section-title();
+  }

@@ -1,0 +1,24 @@
+main {
+  #Associates {
+    background-color: #F4F1F8;
+    padding: 50px 0px;
+    .section-title {
+      @extend %section-title;
+    }
+    h2 {
+      span {
+        color: $primary-color;
+      }
+    }
+    p{
+        color: grey;
+    }
+    .card{
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            transform: translateY(-5px); 
+        }
+    }
+  }
+}

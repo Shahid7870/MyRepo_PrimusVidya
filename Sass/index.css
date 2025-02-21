@@ -1,0 +1,625 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main #Faq .section-title, main #Review .section-title, main #Features .section-title, main #With .section-title, main #Associates .section-title, main #OpenBoard .section-title, main #Benefits .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main #Faq .section-title h2, main #Review .section-title h2, main #Features .section-title h2, main #With .section-title h2, main #Associates .section-title h2, main #OpenBoard .section-title h2, main #Benefits .section-title h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #D85B4F;
+}
+main #Faq .section-title .line, main #Review .section-title .line, main #Features .section-title .line, main #With .section-title .line, main #Associates .section-title .line, main #OpenBoard .section-title .line, main #Benefits .section-title .line {
+  width: 20px;
+  height: 2px;
+  background-color: #1a1e2d;
+  margin-bottom: 5px;
+}
+
+.navbar {
+  background-color: #D85B4F;
+}
+.navbar .navbar-brand {
+  margin-right: 12px;
+}
+.navbar .navbar-brand img {
+  width: 140px;
+  height: auto;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+.navbar .nav-item {
+  margin-right: 10px;
+}
+.navbar .nav-item .nav-link {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+.navbar .nav-item .nav-link:hover {
+  color: #212E47;
+}
+.navbar .nav-item .dropdown-menu {
+  border: none;
+  box-shadow: rgba(4, 4, 5, 0.2) 0px 7px 36px -8px;
+  opacity: 1;
+  top: 30px;
+  z-index: 9999;
+  min-width: 250px;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item {
+  color: #D85B4F;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 1px solid #212E47;
+  width: 50px;
+  margin-left: 20px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+  color: red;
+  border-bottom: 1px solid #D85B4F;
+  background-color: transparent;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item:hover i {
+  color: #212E47;
+}
+.navbar .nav-item .dropdown-menu ul {
+  padding-left: 10px;
+}
+.navbar .nav-item .dropdown-menu ul .nav-item {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+.navbar .nav-item .dropdown-menu ul .nav-item .dropdown-subLink {
+  color: rgb(85, 84, 84);
+  text-decoration: none;
+}
+.navbar .nav-item .dropdown-menu ul .nav-item .dropdown-subLink:hover {
+  color: #D85B4F;
+}
+.navbar .nav-item #dropdownFirst {
+  width: 750px;
+}
+.navbar .nav-button {
+  margin-left: 10px;
+}
+.navbar .nav-button a {
+  background-color: #212E47;
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+.navbar .nav-button a:hover {
+  color: #fff;
+  background-color: #b14955;
+}
+.navbar .nav-item.dropdown {
+  position: relative;
+}
+.navbar .nav-item.dropdown .dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.offcanvas {
+  width: 280px;
+}
+.offcanvas .offcanvas-header {
+  background-color: #D85B4F;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+}
+.offcanvas .offcanvas-header .btn-close {
+  filter: invert(1);
+}
+.offcanvas .offcanvas-header img {
+  height: 50px;
+}
+.offcanvas .offcanvas-body {
+  padding: 1rem;
+}
+
+.accordion .accordion-item {
+  border: none;
+  margin-bottom: 0.5rem;
+}
+.accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: bold;
+  box-shadow: none;
+}
+.accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+.accordion .accordion-item .accordion-header .accordion-button::after {
+  transition: transform 0.3s ease-in-out;
+}
+.accordion .accordion-item .accordion-header .accordion-button[aria-expanded=true]::after {
+  transform: rotate(180deg);
+}
+
+.nav-link {
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+.nav-link:hover {
+  color: #D85B4F;
+}
+
+ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+ul li {
+  margin: 0.5rem 0;
+}
+ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+ul li a:hover {
+  color: #D85B4F;
+}
+
+#TalkBtn {
+  margin-top: 20px;
+  background-color: #1a1e2d;
+  color: white;
+}
+#TalkBtn:hover {
+  background-color: #D85B4F;
+}
+
+main {
+  margin-top: 0px;
+  padding: 0;
+}
+main #Hero {
+  background-color: #b14955;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main #Hero .hero-content {
+  max-width: 90%;
+  width: 600px;
+}
+main #Hero .hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+main #Hero .hero-content h1 img {
+  animation: fadeInBounce 1.5s ease-in-out infinite alternate;
+}
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0.5;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main #Hero .hero-content h2 {
+  font-size: 32px;
+  margin-top: 20px;
+}
+main #Hero .hero-content h2 .text-warning {
+  display: inline-block;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+main #Hero .hero-content button {
+  background-color: #212e47;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  border: none;
+  animation: pulseButton 1.5s infinite ease-in-out;
+}
+main #Hero .hero-content button:hover {
+  background-color: #D85B4F;
+  transform: scale(1.1);
+}
+@keyframes pulseButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 992px) {
+  main #Hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+  main #Hero .hero-content h1 {
+    font-size: 32px;
+  }
+  main #Hero .hero-content h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  main #Hero .hero-content {
+    margin-top: 100px;
+    max-width: 100%;
+  }
+  main #Hero .hero-content h1 {
+    font-size: 28px;
+  }
+  main #Hero .hero-content h2 {
+    font-size: 24px;
+  }
+  main #Hero button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+main #Courses {
+  padding: 50px 0px;
+  background-color: #F9FAFB;
+}
+main #Courses h2 span {
+  color: #D85B4F;
+}
+main #Courses p {
+  color: grey;
+}
+main #Courses .card {
+  background-color: #b14955;
+  color: white;
+  height: 140px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main #Courses .card p {
+  color: white;
+  font-size: 14px;
+}
+main #Courses .card:hover {
+  background-color: #D85B4F;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main #Benefits {
+  background-color: #F4F1F8;
+  padding: 50px 0px;
+}
+main #Benefits h2 span {
+  color: #D85B4F;
+}
+main #Benefits p {
+  color: grey;
+}
+main #Benefits .card {
+  height: 300px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main #Benefits .card img {
+  margin: 15px 0;
+  width: 70px;
+}
+main #Benefits .card:hover {
+  transform: translateY(-5px);
+}
+
+main #OpenBoard {
+  padding: 50px 0px;
+}
+main #OpenBoard h2 span {
+  color: #D85B4F;
+}
+main #OpenBoard button {
+  background-color: #1a1e2d;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+main #OpenBoard button i {
+  visibility: hidden;
+}
+main #OpenBoard button:hover {
+  background-color: #b14955;
+  transform: translateY(-5px);
+}
+main #OpenBoard button:hover i {
+  visibility: visible;
+}
+
+main #Associates {
+  background-color: #F4F1F8;
+  padding: 50px 0px;
+}
+main #Associates h2 span {
+  color: #D85B4F;
+}
+main #Associates p {
+  color: grey;
+}
+main #Associates .card {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+main #Associates .card:hover {
+  transform: translateY(-5px);
+}
+
+main #With {
+  padding: 50px 0px;
+}
+main #With h2 span {
+  color: #D85B4F;
+}
+main #With p {
+  color: grey;
+}
+main #With .card {
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+main #With .card img {
+  width: 350px;
+}
+main #With .card:hover {
+  transform: translateY(-5px);
+}
+main #With #withoutCard {
+  border: 1px solid red;
+}
+main #With #withoutCard p {
+  margin-bottom: 6px;
+}
+main #With #withoutCard p i {
+  color: red;
+}
+main #With #withCard {
+  border: 1px solid green;
+}
+main #With #withCard p {
+  margin-bottom: 5px;
+}
+main #With #withCard p i {
+  color: green;
+}
+
+main #Reason {
+  padding: 50px 0px;
+  background-color: #D85B4F;
+}
+main #Reason .card {
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: #27445d;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+main #Reason .card span {
+  width: 40px;
+  padding: 8px;
+  text-align: center;
+}
+main #Reason .card:hover {
+  background-color: #b14955;
+  transform: translateY(-5px);
+}
+
+main #Features {
+  background-color: #F9FAFB;
+  padding: 50px 0px;
+}
+main #Features h2 span {
+  color: #D85B4F;
+}
+main #Features p {
+  color: grey;
+}
+main #Features .card {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+main #Features .card img {
+  width: 350px;
+}
+main #Features .card:hover {
+  transform: translateY(-5px);
+}
+main #Features #withoutCard {
+  border: 1px solid red;
+}
+main #Features #withoutCard p {
+  margin-bottom: 6px;
+}
+main #Features #withoutCard p i {
+  color: red;
+}
+main #Features #withCard {
+  border: 1px solid green;
+}
+main #Features #withCard p {
+  margin-bottom: 5px;
+}
+main #Features #withCard p i {
+  color: green;
+}
+
+main #Review {
+  padding: 50px 0px;
+}
+main #Review h2 span {
+  color: #D85B4F;
+}
+main #Review p {
+  color: grey;
+}
+main #Review .card {
+  background-color: #D4483B;
+  color: white;
+  margin-bottom: 20px;
+}
+
+main #Help {
+  margin-top: 50px;
+  padding: 50px 0px;
+  background-color: #D85B4F;
+  color: white;
+}
+main #Help button {
+  margin: 15px 0px;
+  padding: 12px 15px;
+  background-color: #1a1e2d;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+main #Help button:hover {
+  background-color: #b14955;
+  transform: translateY(-5px);
+}
+
+main #Faq {
+  padding: 50px 0px;
+  background-color: #f4f1f8;
+}
+main #Faq h2 span {
+  color: #D85B4F;
+}
+main #Faq p {
+  color: grey;
+}
+main #Faq .faq-container {
+  margin: 20px auto;
+}
+main #Faq .faq-container .accordion .accordion-item {
+  border: none;
+  background-color: #f8f9fa;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+main #Faq .faq-container .accordion .accordion-item .accordion-header button {
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+  border: none;
+  padding: 12px;
+  text-align: left;
+  width: 100%;
+  border-radius: 8px;
+}
+main #Faq .faq-container .accordion .accordion-item .accordion-header button:focus {
+  box-shadow: none;
+}
+main #Faq .faq-container .accordion .accordion-item .accordion-header .active {
+  background-color: #fdeaea;
+  color: #d9534f;
+}
+main #Faq .faq-container .accordion .accordion-item .accordion-body {
+  padding: 12px;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #212E47;
+  color: white;
+}
+footer .list-unstyled li {
+  margin-bottom: 10px;
+}
+footer .list-unstyled li i {
+  color: #D85B4F;
+}
+footer .list-unstyled li a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .navbar .navbar-brand img {
+    width: 120px;
+  }
+  .navbar .nav-item {
+    margin-right: 8px;
+  }
+  .navbar .nav-item .nav-link {
+    font-size: 13px;
+  }
+  .navbar .nav-button {
+    margin-left: 5px;
+  }
+  .navbar .nav-button a {
+    padding: 5px 12px;
+    font-size: 14px;
+  }
+  .navbar .dropdown-menu {
+    min-width: 220px;
+  }
+  .navbar #dropdownFirst {
+    width: 100%;
+  }
+  main #Benefits .card {
+    height: 330px;
+  }
+  main #Reason .card {
+    height: 230px;
+  }
+}
+#whatsAppbtn a {
+  background-color: #29A71A;
+  color: white;
+  margin: 0 20px 230px 0;
+}
+#whatsAppbtn a i {
+  font-size: 30px;
+}/*# sourceMappingURL=index.css.map */

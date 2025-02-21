@@ -1,0 +1,43 @@
+// Apply styles starting from medium devices and up to extra large devices
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .navbar {
+    .navbar-brand img {
+      width: 120px;
+    }
+    .nav-item {
+      margin-right: 8px;
+      .nav-link {
+        font-size: 13px;
+      }
+    }
+    .nav-button {
+      margin-left: 5px;
+      a {
+        padding: 5px 12px;
+        font-size: 14px;
+      }
+    }
+    .dropdown-menu {
+      min-width: 220px;
+    }
+    #dropdownFirst {
+      width: 100%;
+    }
+  }
+
+  main {
+    #Benefits {
+      .card {
+        height: 330px;
+      }
+    }
+    #Reason {
+      .card {
+        height: 230px;
+      }
+    }
+   
+  }
+}
+
+

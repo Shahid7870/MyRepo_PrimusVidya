@@ -1,0 +1,23 @@
+main {
+  #Reason {
+    padding: 50px 0px;
+    background-color: $primary-color;
+    .card {
+      height: 200px;
+      margin-bottom: 20px;
+      background-color: #27445d;
+      color: white;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      span {
+        width: 40px;
+        padding: 8px;
+        text-align: center;
+      }
+      &:hover {
+        background-color: $secondary-color;
+        transform: translateY(-5px);
+      }
+    }
+  }
+}

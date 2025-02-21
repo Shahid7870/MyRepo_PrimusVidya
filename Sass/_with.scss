@@ -1,0 +1,45 @@
+main {
+  #With {
+    padding: 50px 0px;
+    .section-title {
+      @extend %section-title;
+    }
+    h2 {
+      span {
+        color: $primary-color;
+      }
+    }
+    p {
+      color: grey;
+    }
+    .card {
+      margin-bottom: 20px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      img {
+        width: 350px;
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+    #withoutCard {
+      border: 1px solid red;
+      p {
+        margin-bottom: 6px;
+        i {
+          color: red;
+        }
+      }
+    }
+    #withCard {
+      border: 1px solid green;
+      p {
+        margin-bottom: 5px;
+        i {
+          color: green;
+        }
+      }
+    }
+  }
+}
