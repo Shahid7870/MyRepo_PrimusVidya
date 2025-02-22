@@ -12,7 +12,7 @@ main {
     
     .hero-content {
       max-width: 90%;
-      width: 600px; // Restricts width for better readability
+      // width: 600px; 
 
       h1 {
         font-size: 40px;
@@ -88,12 +88,12 @@ main {
       }
     }
 
-    // **Responsive Adjustments**
     @media (max-width: 992px) {
       height: auto;
       padding: 60px 20px;
 
       .hero-content {
+        margin-top: 50px;
         h1 {
           font-size: 32px;
         }
@@ -119,7 +119,7 @@ main {
       }
 
       button {
-        width: 100%; // Full-width button on small screens
+        width: 100%; 
         font-size: 16px;
       }
     }

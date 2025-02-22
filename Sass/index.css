@@ -210,7 +210,6 @@ main #Hero {
 }
 main #Hero .hero-content {
   max-width: 90%;
-  width: 600px;
 }
 main #Hero .hero-content h1 {
   font-size: 40px;
@@ -281,6 +280,9 @@ main #Hero .hero-content button:hover {
   main #Hero {
     height: auto;
     padding: 60px 20px;
+  }
+  main #Hero .hero-content {
+    margin-top: 50px;
   }
   main #Hero .hero-content h1 {
     font-size: 32px;
